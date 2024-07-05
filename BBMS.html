@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+
+* {
+    margin: auto;
+    padding: auto;
+}
+.title {
+    padding: 10px 16px;
+    background: red;
+    color: white;
+}
+.container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+}  
+.text {
+    color: black;
+    font-size: 18px;
+    padding-right: 15px;
+    padding: 5px;
+    margin: 5px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    margin-right: 1275px;
+    background-color: white;
+}
+.head-title{
+    text-align: right;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.hero:hover {
+    color: white;
+    transition: .3s;
+}
+
+/* Home Css1 */
+
+.home-image{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.home-image1 {
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+.home-image1 .btn {
+    padding: 12px 35px;
+    background-color: red;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+
+/* ABOUT CSS */
+
+.container1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    margin: auto;
+    margin-top: 100px;
+}
+.image1 {
+    flex-basis: 40%;
+    width: 500px;
+}
+
+.text1 {
+    font-size: 20px;
+    padding-left: 20px;
+    width: 500px;
+}
+/*------service-----*/
+
+#service {
+    padding: 10px 0;
+    color: white;
+}
+.title-service {
+    text-align: center;
+    color: black;
+    font-size: 23px;
+    font-weight: 600;
+}
+.service-list {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 3px;
+    padding: 30px;
+    margin: 45px;
+}
+.service-list div {
+    color: black;
+    background: white;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    transition: background 0.5s, transform 0.5s;
+    border-style: solid;
+}
+.service-list div h4 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.service-list div p {
+    font-size: 14px;
+}
+.service-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.service-list div:hover {
+    background: #ff004f;
+    transform: translateY(10px);
+}
+
+/*FAQ section */
+
+.questions{
+  padding: 10px;
+  margin: auto;
+  padding-left: 50px;
+  padding-right: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+}
+.questions h3{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: blink;
+  font :bold;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+.question{
+  background-color: #eee;
+  font-size: 20px;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.active, .question:hover {
+  background-color: #ccc;
+}
+.answer {
+  padding: 0 18px;
+  background-color: white;
+  font-size: 18px;
+  display: none;
+  overflow: hidden;
+}
+.question:after {
+  content: '\02795'; 
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; 
+}
+
+
+/* contact section */
+
+.contact-section {
+    background: black;
+    color: white;
+    padding: 25px;
+    margin: auto;
+    text-align: center;
+}
+.section-title-1{
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+.contact .container .content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contact-left h2{
+    color: orangered;
+    font-size: 22px;
+    font-weight: 250;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.contact-list li {
+    margin-bottom: 40px;
+}
+.contact-list li h3{
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact-list li h3 img{
+    color: var(--third-color);
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+.contact-list li span {
+    color: var(--third-color);
+    margin-left: 10px;
+}
+.contact-list li span a {
+    color: var(--third-color);
+}
+.logo-img{
+  float: center;
+  width: 3%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-img1::after {
+  content: "";
+  clear: both;
+}
+
+/* Footer section */
+
+.foot {
+    padding: 10px;
+    margin: auto;
+    background-color: grey;
+    text-align: center;
+}
+
+    </style>
+
+<!---Style section ends here--->
+
+    <title>BBMS VScode</title>
+</head>
+<body>
+
+<!----Header section--->
+    <header class="title">
+        
+        <div class="container">
+            <div class="text">
+            <h1>Blood Bank</h1>
+            </div>
+        </div>
+
+        <div class="head-title">
+           <div class="head-items">
+                <ul class="hero">
+                    <a href="#home">HOME</a>
+                    <a href="#about">ABOUT</a>
+                    <a href="#service">SERVICE</a>
+                    <a href="#FAQ">FAQ</a>
+                    <a href="#contact">CONTACT</a>
+                </ul>
+           </div>
+        </div>
+    </header>
+
+
+
+<!----Home Section----->
+
+        <div class="home" id="home">
+            <div class="home-image">
+                <img src="C:\Users\Shradha Taskar\OneDrive\Pictures\Saved Pictures\BBMS IMG's\istockphoto-1220217893-170667a.jpg">
+                <div class="home-image1">
+                    <h2>Donate Blood, Save Life!</h2>
+                    <p class="home-p">Donate your Blood and inspire others to donate.</p> <br>
+                    <button class="btn" type="Click"> <a href="D:\Programs\HTML\BBMSabout.html">Join Us</a></button>
+                </div>
+            </div>
+
+        </div>
+
+
+ <!----About section--->
+
+
+        <div class="about" id="about">
+
+            <div class="container1">
+                <div class="image1">
+                    <img src="C:\Users\Shradha Taskar\OneDrive\Pictures\Saved Pictures\BBMS IMG's\blood-donation-picture_41050-1612.avif" alt="img-2">
+                </div>
+                <div class="text1">
+                    <h2>Who We Are?</h2> <br><br>
+                    <p>The need for blood is increasing throughout the world and we need to motivate people to donate blood at least once in life to save the lives of people in need. Science has now proved that giving blood is a healthy activity and the amount of blood we give is regenerated in our body in a short period. So there is no reason for us to avoid donating blood.</p> <br>
+                    <p>To know more about Blood Donation <a href="D:\Programs\HTML\BBMSabout.html">Click here</a> </p>
+                </div>
+            </div>
+
+        </div>
+
+<!-----Service section---->
+
+        <div class="service" id="service">
+            <div class="title-service">
+                <h2>Service Available</h2>
+                </div>
+           
+           <div class="service-list">
+
+            <div>
+                    <h4>Donor Management</h4>
+                    <p>The solution can be used as Blood Bank and Donor management system to simplify and automate the process of searching for blood in case of emergency and maintain the records of blood.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+            <div>
+                    <h4>Doner's Registered</h4>
+                    <p>The Donor Register will ensure that consent (or objection) to donating organs and/or tissue for transplantation can be verified 24 hours a day, seven days a week, anywhere in India.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+            <div >
+                    <h4>Blood Donation Camps</h4>
+                    <p>The main objective and purpose to organize a blood donation camp is to motivate people to donate blood and to let them know the benifites of blood donation.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+            <div>
+                    <h4>Blood Bank Directory</h4>
+                    <p>It is an identifier for the local Blood Bank given by State level DCGI and monitored by NACO. by authorised medical personnel. This identifier will come from the application level Blood.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+
+
+            <div>
+                    <h4>Blood Units collected</h4>
+                    <p>The total number of Blood collected by Blood Bank Management system is 00000.Blood bank is available for 24/7 and for anyone. It keeps on changing everyday.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+            <div>
+                    <h4>Quality Management</h4>
+                    <p>Is actively and continuously practiced by blood bank leaders, managers, and staff throughout all blood bank operations. Operational techniques and activities used to fulfill the requirements for quality.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+
+            <div>
+                    <h4>Compilence Program</h4>
+                    <p>Evaluate how effectively the facility meets regulatory and accreditation a requirements by detecting errors, deficiencies, and deviations.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+
+            <div>
+                    <h4>Quality Assurance</h4>
+                    <p>Planned, systematic activities implemented within the quality system to provide confidence that requirements for quality will be fulfilled.</p>
+                    <a href="#">learn more</a>
+            </div>
+
+           </div>
+
+        </div>
+
+<!---FAQ section---->
+
+                  
+    <div class="questions" id="FAQ">
+      <h3> <b>Frequently asked questions</b> </h3>
+
+
+        <button class="question">Who can donate blood?</button>
+          <div class="answer">
+            <p>Prospective blood donors should be in good health, free from infections, and not experiencing any acute illnesses. They should have a healthy weight and meet the physical requirements set by blood banks or donation centers.</p>
+          </div>
+
+          <br><br>
+
+        <button class="question">How does the blood donation process work?</button>
+          <div class="answer">
+            <p>Donating blood is a simple thing to do, but can make a big difference in the lives of others. The donation process from the time you arrive until the time you leave takes about an hour. The donation itself is only about 8-10 minutes on average.</p>
+          </div>
+
+          <br><br>
+
+          <button class="question">How long does a blood donation take?</button>
+          <div class="answer">
+            <p>The entire process takes about one hour and 15 minutes; the actual donation of a pint of whole blood unit takes eight to 10 minutes. However, the time varies slightly with each person depending on several factors including the donor’s health history and attendance at the blood drive.</p>
+          </div>
+
+          <br><br>
+
+          <button class="question">How long will it take to replenish the pint of blood donation?</button>
+          <div class="answer">
+            <p>The plasma from your donation is replaced within about 24 hours. Red cells need about four to six weeks for complete replacement. That’s why at least eight weeks are required between whole blood donations.</p>
+          </div>
+
+          <br><br>
+
+
+          <button class="question">How often can I donate blood?</button>
+          <div class="answer">
+            <p>You must wait at least eight weeks (56 days) between donations of whole blood and 16 weeks (112 days) between Power Red donations. Whole blood donors can donate up to 6 times a year. Platelet apheresis donors may give every 7 days up to 24 times per year. Regulations are different for those giving blood for themselves (autologous donors).</p>
+          </div>
+
+          <br><br>
+
+          <button class="question">Is there any age limit to donate blood?</button>
+          <div class="answer">
+            <p>You must be at least 17 years old to donate to the general blood supply, or 16 years old with parental/guardian consent, if allowed by state law. Learn more. There is no upper age limit for blood donation as long as you are well with no restrictions or limitations to your activities.</p>
+          </div>
+
+          <br><br>
+
+          <button class="question">What is the minimun weight to donate blood?</button>
+          <div class="answer">
+            <p>Your minimum weight for donating blood must be 45 kg. You must be physically fit to be in line with the rules while donating blood. You cannot donate with any type of flu, cold, sore throat, fever, stomach flu or any type of infection. If you have a piercing or tattoo on your body, you must wait for 6 months to donate blood.</p>
+          </div>
+
+          <br><br>
+
+          <button class="question">Can I donate blood if I have an allergy?</button>
+          <div class="answer">
+            <p>Yes, if you have mild allergies you can donate blood, even when taking antihistamines for treatment. However, there are times when you may not be able to donate. have an allergy to a substance we use in the blood donation process experience cold urticaria (red, raised, itchy rashes on the skin after exposure to the cold).</p>
+          </div>
+
+          <br><br>
+
+          <button class="question">Can people with diabetes donate blood?</button>
+          <div class="answer">
+            <p>People with diabetes can donate blood if they meet certain eligibility requirements. In general, people with well-managed or controlled diabetes can donate blood. This includes people with diabetes who take insulin or oral medications for diabetes management.</p>
+          </div>
+
+          <br><br>
+
+         
+    </div>
+
+
+<!---Contact section---->
+
+
+
+        <section class="contact-section" id="contact">
+            <div class="container flex-center">
+                <h1 class="section-title-1">Contact Us</h1>
+                <div class="content">
+                    <div class="contact-left">
+                        <h2>Get In Touch</h2>
+                        <ul class="contact-list">
+                            
+                                <h3 class="item-title"> <img src="C:\Users\Shradha Taskar\OneDrive\Pictures\Saved Pictures\BBMS IMG's\icons8-phone-30.png">Phone</h3>
+                                <span>+91 1234567891</span>
+
+                                <br><br>
+                        
+                                <h3 class="item-title"> <img src="C:\Users\Shradha Taskar\OneDrive\Pictures\Saved Pictures\BBMS IMG's\icons8-email-24.png">Email-id</h3>
+                                <span>bloodbank@gmail.com</span>
+
+                                <br><br>
+
+                                <h3 class="item-title"> <img src="C:\Users\Shradha Taskar\OneDrive\Pictures\Saved Pictures\BBMS IMG's\icons8-location-24.png">Address</h3>
+                                <span>India, Maharashtra, Pune.</span>
+                
+                        </ul>
+
+                        <div class="logo-img">
+                            
+                            <div class="logo-img1">
+                                <img src="C:\Users\Shradha Taskar\OneDrive\Pictures\Saved Pictures\BBMS IMG's\icons8-facebook-30.png">
+                            </div>
+
+                            <div class="logo-img1">
+                                <img src="C:\Users\Shradha Taskar\OneDrive\Pictures\Saved Pictures\BBMS IMG's\icons8-instagram-50.png">
+                            </div>
+
+                            <div class="logo-img1">
+                                <img src="C:\Users\Shradha Taskar\OneDrive\Pictures\Saved Pictures\BBMS IMG's\icons8-twitterx-30.png">
+                            </div>
+
+                            <div class="logo-img1">
+                                <img src="C:\Users\Shradha Taskar\OneDrive\Pictures\Saved Pictures\BBMS IMG's\icons8-linkedin-30.png">
+                            </div>
+
+
+                            
+                        </div>
+                    </div>
+
+
+                    <div class="content-right">
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+<!---Footer---->
+
+
+    <footer>
+
+
+        <div class="foot">
+            <p>&COPY copyright Blood Bank Management System @2024...Created by @Shradha Taskar</p>
+        </div>
+    </footer>
+
+</body>
+
+<script>
+
+var acc = document.getElementsByClassName("question");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+
+    this.classList.toggle("active");
+
+   
+    var answer = this.nextElementSibling;
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+    } else {
+      answer.style.display = "block";
+    }
+  });
+}
+
+
+    </script>
+
+
+</html>
+
